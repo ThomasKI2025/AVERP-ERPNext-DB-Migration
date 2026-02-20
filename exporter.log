@@ -1,0 +1,163 @@
+2026-01-08 12:08:23,498 ERROR DB-Verbindungsfehler: The location of Firebird Client Library could not be determined.
+2026-01-08 12:11:10,882 ERROR DB-Verbindungsfehler: ('Error while connecting to database:\n- SQLCODE: -902\n- I/O error during "CreateFile (open)" operation for file "D:\\AVERP\\AVERP_DATENBANKEN\\KTB-PRODUKTIV.FDP"\n- Error while trying to open file\n- Das System kann die angegebene Datei nicht finden. ', -902, 335544344)
+2026-01-08 12:44:35,404 INFO fdb Treiber fehlgeschlagen: ('Error while connecting to database:\n- SQLCODE: -820\n- unsupported on-disk structure for file /home/oswin/Documents/Coding/AVERP Exporter/DB/KTB-Produktiv.FDB; found 11.2, support 12.2', -820, 335544379)
+2026-01-08 12:44:35,447 ERROR Beide Treiber fehlgeschlagen - fdb: ('Error while connecting to database:\n- SQLCODE: -820\n- unsupported on-disk structure for file /home/oswin/Documents/Coding/AVERP Exporter/DB/KTB-Produktiv.FDB; found 11.2, support 12.2', -820, 335544379), firebirdsql: [Errno 111] Connection refused
+2026-01-08 12:44:35,447 ERROR DB-Verbindungsfehler: [Errno 111] Connection refused
+2026-01-08 13:10:39,710 INFO Datenbankverbindung erfolgreich hergestellt
+2026-01-08 13:10:39,710 INFO Starte Export: kunden
+2026-01-08 13:10:39,869 ERROR Fehler beim Export von kunden: Object of type BlobReader is not JSON serializable
+2026-01-08 13:10:39,870 INFO Starte Export: lieferanten
+2026-01-08 13:10:39,871 ERROR Fehler beim Export von lieferanten: Execution failed on sql 'SELECT * FROM BLIEFER': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BLIEFER\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:39,871 INFO Starte Export: adressen
+2026-01-08 13:10:39,888 ERROR Fehler beim Export von adressen: ('Cursor.fetchone:\n- SQLCODE: -802\n- arithmetic exception, numeric overflow, or string truncation\n- Cannot transliterate character between character sets', -802, 335544321)
+2026-01-08 13:10:39,889 INFO Starte Export: ansprechpartner
+2026-01-08 13:10:39,889 ERROR Fehler beim Export von ansprechpartner: Execution failed on sql 'SELECT * FROM BKP': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BKP\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:39,889 INFO Starte Export: artikel
+2026-01-08 13:10:41,711 INFO Exportiert: ./export/artikel_chunk1.json (2365 Datensätze)
+2026-01-08 13:10:41,725 INFO Starte Export: warengruppen
+2026-01-08 13:10:41,726 ERROR Fehler beim Export von warengruppen: Execution failed on sql 'SELECT * FROM BSAGR': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BSAGR\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,726 INFO Starte Export: einheiten
+2026-01-08 13:10:41,728 ERROR Fehler beim Export von einheiten: Execution failed on sql 'SELECT * FROM BSAUOM': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BSAUOM\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,728 INFO Starte Export: preise
+2026-01-08 13:10:41,729 ERROR Fehler beim Export von preise: Execution failed on sql 'SELECT * FROM BARTPR': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BARTPR\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,729 INFO Starte Export: auftraege
+2026-01-08 13:10:41,750 ERROR Fehler beim Export von auftraege: Object of type time is not JSON serializable
+2026-01-08 13:10:41,750 INFO Starte Export: auftragspositionen
+2026-01-08 13:10:41,751 ERROR Fehler beim Export von auftragspositionen: Execution failed on sql 'SELECT * FROM BAUFP': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BAUFP\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,751 INFO Starte Export: rechnungen
+2026-01-08 13:10:41,751 ERROR Fehler beim Export von rechnungen: Execution failed on sql 'SELECT * FROM BRECH': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BRECH\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,751 INFO Starte Export: rechnungspositionen
+2026-01-08 13:10:41,752 ERROR Fehler beim Export von rechnungspositionen: Execution failed on sql 'SELECT * FROM BRECHP': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BRECHP\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,752 INFO Starte Export: bestellungen
+2026-01-08 13:10:41,753 ERROR Fehler beim Export von bestellungen: Execution failed on sql 'SELECT * FROM BBEST': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BBEST\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,753 INFO Starte Export: bestellpositionen
+2026-01-08 13:10:41,754 ERROR Fehler beim Export von bestellpositionen: Execution failed on sql 'SELECT * FROM BBESTP': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BBESTP\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,754 INFO Starte Export: eingangsrechnungen
+2026-01-08 13:10:41,764 ERROR Fehler beim Export von eingangsrechnungen: Object of type time is not JSON serializable
+2026-01-08 13:10:41,764 INFO Starte Export: eingangsrechnungspositionen
+2026-01-08 13:10:41,779 INFO Exportiert: ./export/eingangsrechnungspositionen_chunk1.json (23 Datensätze)
+2026-01-08 13:10:41,779 INFO Starte Export: buchungen
+2026-01-08 13:10:41,780 ERROR Fehler beim Export von buchungen: Execution failed on sql 'SELECT * FROM BBS': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BBS\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,780 INFO Starte Export: buchungspositionen
+2026-01-08 13:10:41,781 ERROR Fehler beim Export von buchungspositionen: Execution failed on sql 'SELECT * FROM BBSP': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BBSP\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:10:41,793 INFO Export abgeschlossen
+2026-01-08 13:37:39,054 INFO Datenbankverbindung erfolgreich hergestellt
+2026-01-08 13:37:39,055 INFO Starte Export: kunden
+2026-01-08 13:37:39,226 ERROR Fehler beim Export von kunden: Object of type BlobReader is not JSON serializable
+2026-01-08 13:37:39,226 INFO Starte Export: lieferanten
+2026-01-08 13:37:39,227 ERROR Fehler beim Export von lieferanten: Execution failed on sql 'SELECT * FROM BLIEFER': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BLIEFER\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:39,227 INFO Starte Export: adressen
+2026-01-08 13:37:39,242 ERROR Fehler beim Export von adressen: ('Cursor.fetchone:\n- SQLCODE: -802\n- arithmetic exception, numeric overflow, or string truncation\n- Cannot transliterate character between character sets', -802, 335544321)
+2026-01-08 13:37:39,242 INFO Starte Export: ansprechpartner
+2026-01-08 13:37:39,244 INFO Exportiert: ./export/ansprechpartner_chunk1.json (0 Datensätze)
+2026-01-08 13:37:39,244 INFO Starte Export: artikel
+2026-01-08 13:37:41,401 INFO Exportiert: ./export/artikel_chunk1.json (2365 Datensätze)
+2026-01-08 13:37:41,419 INFO Starte Export: warengruppen
+2026-01-08 13:37:41,421 ERROR Fehler beim Export von warengruppen: Execution failed on sql 'SELECT * FROM BSAGR': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BSAGR\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:41,421 INFO Starte Export: einheiten
+2026-01-08 13:37:41,422 ERROR Fehler beim Export von einheiten: Execution failed on sql 'SELECT * FROM BSAUOM': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BSAUOM\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:41,422 INFO Starte Export: preise
+2026-01-08 13:37:41,423 ERROR Fehler beim Export von preise: Execution failed on sql 'SELECT * FROM BARTPR': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BARTPR\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:41,423 INFO Starte Export: auftraege
+2026-01-08 13:37:41,425 INFO Exportiert: ./export/auftraege_chunk1.json (0 Datensätze)
+2026-01-08 13:37:41,425 INFO Starte Export: auftragspositionen
+2026-01-08 13:37:41,426 ERROR Fehler beim Export von auftragspositionen: Execution failed on sql 'SELECT * FROM BAUFP': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BAUFP\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:41,426 INFO Starte Export: rechnungen
+2026-01-08 13:37:41,426 ERROR Fehler beim Export von rechnungen: Execution failed on sql 'SELECT * FROM BRECH': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BRECH\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:41,426 INFO Starte Export: rechnungspositionen
+2026-01-08 13:37:41,427 ERROR Fehler beim Export von rechnungspositionen: Execution failed on sql 'SELECT * FROM BRECHP': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BRECHP\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:41,427 INFO Starte Export: bestellungen
+2026-01-08 13:37:41,432 INFO Exportiert: ./export/bestellungen_chunk1.json (0 Datensätze)
+2026-01-08 13:37:41,432 INFO Starte Export: bestellpositionen
+2026-01-08 13:37:41,435 INFO Exportiert: ./export/bestellpositionen_chunk1.json (0 Datensätze)
+2026-01-08 13:37:41,436 INFO Starte Export: eingangsrechnungen
+2026-01-08 13:37:41,446 INFO Exportiert: ./export/eingangsrechnungen_chunk1.json (10 Datensätze)
+2026-01-08 13:37:41,446 INFO Starte Export: eingangsrechnungspositionen
+2026-01-08 13:37:41,461 INFO Exportiert: ./export/eingangsrechnungspositionen_chunk1.json (23 Datensätze)
+2026-01-08 13:37:41,462 INFO Starte Export: buchungen
+2026-01-08 13:37:41,463 ERROR Fehler beim Export von buchungen: Execution failed on sql 'SELECT * FROM BBS': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BBS\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:41,463 INFO Starte Export: buchungspositionen
+2026-01-08 13:37:41,464 ERROR Fehler beim Export von buchungspositionen: Execution failed on sql 'SELECT * FROM BBSP': ('Error while preparing SQL statement:\n- SQLCODE: -204\n- Dynamic SQL Error\n- SQL error code = -204\n- Table unknown\n- BBSP\n- At line 1, column 15', -204, 335544569)
+2026-01-08 13:37:41,477 INFO Export abgeschlossen
+2026-01-08 13:38:48,289 INFO Datenbankverbindung erfolgreich hergestellt
+2026-01-08 13:38:48,289 INFO Starte Export: kunden
+2026-01-08 13:38:48,466 ERROR Fehler beim Export von kunden: Object of type BlobReader is not JSON serializable
+2026-01-08 13:38:48,466 INFO Starte Export: adressen
+2026-01-08 13:38:48,482 ERROR Fehler beim Export von adressen: ('Cursor.fetchone:\n- SQLCODE: -802\n- arithmetic exception, numeric overflow, or string truncation\n- Cannot transliterate character between character sets', -802, 335544321)
+2026-01-08 13:38:48,482 INFO Starte Export: artikel
+2026-01-08 13:38:50,609 INFO Exportiert: ./export/artikel_chunk1.json (2365 Datensätze)
+2026-01-08 13:38:50,628 INFO Starte Export: postleitzahlen
+2026-01-08 13:38:51,516 INFO Exportiert: ./export/postleitzahlen_chunk1.json (10000 Datensätze)
+2026-01-08 13:38:52,298 INFO Exportiert: ./export/postleitzahlen_chunk2.json (10000 Datensätze)
+2026-01-08 13:38:53,076 INFO Exportiert: ./export/postleitzahlen_chunk3.json (10000 Datensätze)
+2026-01-08 13:38:53,887 INFO Exportiert: ./export/postleitzahlen_chunk4.json (10000 Datensätze)
+2026-01-08 13:38:54,745 INFO Exportiert: ./export/postleitzahlen_chunk5.json (10000 Datensätze)
+2026-01-08 13:38:55,450 INFO Exportiert: ./export/postleitzahlen_chunk6.json (8622 Datensätze)
+2026-01-08 13:38:55,457 INFO Starte Export: banken
+2026-01-08 13:38:55,981 INFO Exportiert: ./export/banken_chunk1.json (7261 Datensätze)
+2026-01-08 13:38:55,984 INFO Starte Export: werke
+2026-01-08 13:38:56,341 INFO Exportiert: ./export/werke_chunk1.json (4343 Datensätze)
+2026-01-08 13:38:56,345 INFO Starte Export: eingangsrechnungen
+2026-01-08 13:38:56,355 INFO Exportiert: ./export/eingangsrechnungen_chunk1.json (10 Datensätze)
+2026-01-08 13:38:56,355 INFO Starte Export: eingangsrechnungspositionen
+2026-01-08 13:38:56,370 INFO Exportiert: ./export/eingangsrechnungspositionen_chunk1.json (23 Datensätze)
+2026-01-08 13:38:56,370 INFO Starte Export: felder
+2026-01-08 13:38:57,532 INFO Exportiert: ./export/felder_chunk1.json (10000 Datensätze)
+2026-01-08 13:38:58,782 INFO Exportiert: ./export/felder_chunk2.json (10000 Datensätze)
+2026-01-08 13:39:00,055 INFO Exportiert: ./export/felder_chunk3.json (10000 Datensätze)
+2026-01-08 13:39:01,275 INFO Exportiert: ./export/felder_chunk4.json (10000 Datensätze)
+2026-01-08 13:39:02,485 INFO Exportiert: ./export/felder_chunk5.json (10000 Datensätze)
+2026-01-08 13:39:03,707 INFO Exportiert: ./export/felder_chunk6.json (10000 Datensätze)
+2026-01-08 13:39:04,920 INFO Exportiert: ./export/felder_chunk7.json (10000 Datensätze)
+2026-01-08 13:39:06,169 INFO Exportiert: ./export/felder_chunk8.json (10000 Datensätze)
+2026-01-08 13:39:06,202 INFO Exportiert: ./export/felder_chunk9.json (133 Datensätze)
+2026-01-08 13:39:06,203 INFO Starte Export: tabellen
+2026-01-08 13:39:06,762 INFO Exportiert: ./export/tabellen_chunk1.json (6538 Datensätze)
+2026-01-08 13:39:06,765 INFO Starte Export: masken
+2026-01-08 13:39:07,845 ERROR Fehler beim Export von masken: ('Cursor.fetchone:\n- SQLCODE: -802\n- arithmetic exception, numeric overflow, or string truncation\n- Cannot transliterate character between character sets', -802, 335544321)
+2026-01-08 13:39:07,850 INFO Starte Export: transport_daten
+2026-01-08 13:39:07,851 ERROR Fehler beim Export von transport_daten: Execution failed on sql 'SELECT * FROM A_TRANSP LIMIT 1000': ('Error while preparing SQL statement:\n- SQLCODE: -104\n- Dynamic SQL Error\n- SQL error code = -104\n- Token unknown - line 1, column 30\n- 1000', -104, 335544569)
+2026-01-08 13:39:07,851 INFO Starte Export: transaktionen
+2026-01-08 13:39:07,853 ERROR Fehler beim Export von transaktionen: Execution failed on sql 'SELECT * FROM A_TRANS LIMIT 1000': ('Error while preparing SQL statement:\n- SQLCODE: -104\n- Dynamic SQL Error\n- SQL error code = -104\n- Token unknown - line 1, column 29\n- 1000', -104, 335544569)
+2026-01-08 13:39:07,863 INFO Export abgeschlossen
+2026-02-11 11:46:22,925 INFO Datenbankverbindung erfolgreich hergestellt
+2026-02-11 11:46:22,926 INFO Starte Export: kunden
+2026-02-11 11:46:23,015 ERROR Fehler beim Export von kunden: Object of type BlobReader is not JSON serializable
+2026-02-11 11:46:23,015 INFO Starte Export: adressen
+2026-02-11 11:46:23,043 ERROR Fehler beim Export von adressen: ('Cursor.fetchone:\n- SQLCODE: -802\n- arithmetic exception, numeric overflow, or string truncation\n- Cannot transliterate character between character sets', -802, 335544321)
+2026-02-11 11:46:23,043 INFO Starte Export: artikel
+2026-02-11 11:46:26,436 INFO Exportiert: ./export/artikel_chunk1.json (2365 Datensätze)
+2026-02-11 11:46:26,461 INFO Starte Export: postleitzahlen
+2026-02-11 11:46:27,432 INFO Exportiert: ./export/postleitzahlen_chunk1.json (10000 Datensätze)
+2026-02-11 11:46:28,433 INFO Exportiert: ./export/postleitzahlen_chunk2.json (10000 Datensätze)
+2026-02-11 11:46:29,406 INFO Exportiert: ./export/postleitzahlen_chunk3.json (10000 Datensätze)
+2026-02-11 11:46:30,382 INFO Exportiert: ./export/postleitzahlen_chunk4.json (10000 Datensätze)
+2026-02-11 11:46:31,379 INFO Exportiert: ./export/postleitzahlen_chunk5.json (10000 Datensätze)
+2026-02-11 11:46:32,402 INFO Exportiert: ./export/postleitzahlen_chunk6.json (8622 Datensätze)
+2026-02-11 11:46:32,406 INFO Starte Export: banken
+2026-02-11 11:46:33,070 INFO Exportiert: ./export/banken_chunk1.json (7261 Datensätze)
+2026-02-11 11:46:33,074 INFO Starte Export: werke
+2026-02-11 11:46:33,557 INFO Exportiert: ./export/werke_chunk1.json (4343 Datensätze)
+2026-02-11 11:46:33,560 INFO Starte Export: eingangsrechnungen
+2026-02-11 11:46:33,575 INFO Exportiert: ./export/eingangsrechnungen_chunk1.json (10 Datensätze)
+2026-02-11 11:46:33,576 INFO Starte Export: eingangsrechnungspositionen
+2026-02-11 11:46:33,599 INFO Exportiert: ./export/eingangsrechnungspositionen_chunk1.json (23 Datensätze)
+2026-02-11 11:46:33,599 INFO Starte Export: felder
+2026-02-11 11:46:35,363 INFO Exportiert: ./export/felder_chunk1.json (10000 Datensätze)
+2026-02-11 11:46:37,198 INFO Exportiert: ./export/felder_chunk2.json (10000 Datensätze)
+2026-02-11 11:46:39,018 INFO Exportiert: ./export/felder_chunk3.json (10000 Datensätze)
+2026-02-11 11:46:40,825 INFO Exportiert: ./export/felder_chunk4.json (10000 Datensätze)
+2026-02-11 11:46:42,632 INFO Exportiert: ./export/felder_chunk5.json (10000 Datensätze)
+2026-02-11 11:46:44,479 INFO Exportiert: ./export/felder_chunk6.json (10000 Datensätze)
+2026-02-11 11:46:46,289 INFO Exportiert: ./export/felder_chunk7.json (10000 Datensätze)
+2026-02-11 11:46:48,123 INFO Exportiert: ./export/felder_chunk8.json (10000 Datensätze)
+2026-02-11 11:46:48,166 INFO Exportiert: ./export/felder_chunk9.json (133 Datensätze)
+2026-02-11 11:46:48,166 INFO Starte Export: tabellen
+2026-02-11 11:46:48,849 INFO Exportiert: ./export/tabellen_chunk1.json (6538 Datensätze)
+2026-02-11 11:46:48,852 INFO Starte Export: masken
+2026-02-11 11:46:50,549 ERROR Fehler beim Export von masken: ('Cursor.fetchone:\n- SQLCODE: -802\n- arithmetic exception, numeric overflow, or string truncation\n- Cannot transliterate character between character sets', -802, 335544321)
+2026-02-11 11:46:50,556 INFO Starte Export: transport_daten
+2026-02-11 11:46:50,556 ERROR Fehler beim Export von transport_daten: ('Error while preparing SQL statement:\n- SQLCODE: -104\n- Dynamic SQL Error\n- SQL error code = -104\n- Token unknown - line 1, column 30\n- 1000', -104, 335544569)
+2026-02-11 11:46:50,557 INFO Starte Export: transaktionen
+2026-02-11 11:46:50,557 ERROR Fehler beim Export von transaktionen: ('Error while preparing SQL statement:\n- SQLCODE: -104\n- Dynamic SQL Error\n- SQL error code = -104\n- Token unknown - line 1, column 29\n- 1000', -104, 335544569)
+2026-02-11 11:46:50,572 INFO Export abgeschlossen

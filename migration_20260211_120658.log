@@ -1,0 +1,70 @@
+[2026-02-11 12:06:58] INFO: 🚀 AVERP → ERPNext Migration Pipeline
+[2026-02-11 12:06:58] INFO: Log-Datei: migration_20260211_120658.log
+[2026-02-11 12:06:58] INFO: ============================================================
+[2026-02-11 12:06:58] INFO: SCHRITT 1: AVERP Datenbank-Prüfung
+[2026-02-11 12:06:58] INFO: ============================================================
+[2026-02-11 12:06:58] INFO: Export übersprungen (--skip-export)
+[2026-02-11 12:06:58] INFO: 
+============================================================
+[2026-02-11 12:06:58] INFO: SCHRITT 2: AVERP Datenexport
+[2026-02-11 12:06:58] INFO: ============================================================
+[2026-02-11 12:06:58] INFO: Export übersprungen
+[2026-02-11 12:06:58] INFO: 
+============================================================
+[2026-02-11 12:06:58] INFO: SCHRITT 3: JSON-Validierung
+[2026-02-11 12:06:58] INFO: ============================================================
+[2026-02-11 12:06:58] INFO: Gefunden: 22 JSON-Dateien
+[2026-02-11 12:06:58] INFO:   ✅ artikel_chunk1.json                      -   2365 Datensätze
+[2026-02-11 12:06:58] INFO:   ✅ banken_chunk1.json                       -   7261 Datensätze
+[2026-02-11 12:06:58] INFO:   ✅ eingangsrechnungen_chunk1.json           -     10 Datensätze
+[2026-02-11 12:06:58] INFO:   ✅ eingangsrechnungspositionen_chunk1.json  -     23 Datensätze
+[2026-02-11 12:06:58] INFO:   ✅ felder_chunk1.json                       -  10000 Datensätze
+[2026-02-11 12:06:58] INFO:   ✅ felder_chunk2.json                       -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ felder_chunk3.json                       -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ felder_chunk4.json                       -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ felder_chunk5.json                       -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ felder_chunk6.json                       -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ felder_chunk7.json                       -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ felder_chunk8.json                       -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ felder_chunk9.json                       -    133 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ kunden_chunk1.json                       -     15 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ postleitzahlen_chunk1.json               -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ postleitzahlen_chunk2.json               -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ postleitzahlen_chunk3.json               -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ postleitzahlen_chunk4.json               -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ postleitzahlen_chunk5.json               -  10000 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ postleitzahlen_chunk6.json               -   8622 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ tabellen_chunk1.json                     -   6538 Datensätze
+[2026-02-11 12:06:59] INFO:   ✅ werke_chunk1.json                        -   4343 Datensätze
+[2026-02-11 12:06:59] INFO: 
+Validierung: 22 OK, 0 Fehler
+[2026-02-11 12:06:59] INFO: 
+============================================================
+[2026-02-11 12:06:59] INFO: SCHRITT 4: ERPNext Verbindungstest
+[2026-02-11 12:06:59] INFO: ============================================================
+[2026-02-11 12:06:59] SUCCESS: ✅ Verbunden als: shisuka.hariku@gmail.com
+[2026-02-11 12:06:59] INFO:    URL: http://localhost:8000
+[2026-02-11 12:06:59] INFO: 
+============================================================
+[2026-02-11 12:06:59] INFO: SCHRITT 5: ERPNext Datenimport
+[2026-02-11 12:06:59] INFO: ============================================================
+[2026-02-11 12:06:59] INFO: 
+📦 Importiere: kunden
+[2026-02-11 12:07:00] SUCCESS:    ✅ Erfolgreich: 0
+[2026-02-11 12:07:00] INFO:    ⏭️  Übersprungen: 0
+[2026-02-11 12:07:00] ERROR:    ❌ Fehler: 15
+[2026-02-11 12:07:00] INFO: 
+📦 Importiere: werke
+[2026-02-11 12:09:29] SUCCESS:    ✅ Erfolgreich: 0
+[2026-02-11 12:09:29] INFO:    ⏭️  Übersprungen: 0
+[2026-02-11 12:09:29] ERROR:    ❌ Fehler: 4343
+[2026-02-11 12:09:29] INFO: 
+📦 Importiere: banken
+[2026-02-11 12:12:30] SUCCESS:    ✅ Erfolgreich: 788
+[2026-02-11 12:12:30] INFO:    ⏭️  Übersprungen: 0
+[2026-02-11 12:12:30] ERROR:    ❌ Fehler: 6473
+[2026-02-11 12:12:30] INFO: 
+============================================================
+[2026-02-11 12:12:30] INFO: ✅ Migration erfolgreich abgeschlossen!
+[2026-02-11 12:12:30] INFO: ============================================================
+[2026-02-11 12:12:30] INFO: Log gespeichert: migration_20260211_120658.log
