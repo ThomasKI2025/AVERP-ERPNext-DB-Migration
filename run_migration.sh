@@ -60,15 +60,15 @@ else
 fi
 
 # Prüfe FDB-Datei
-if [ -f "KTB-Produktiv-restored.fdb" ]; then
-    FDB_SIZE=$(du -h KTB-Produktiv-restored.fdb | awk '{print $1}')
+if [ -f "Produktiv-restored.fdb" ]; then
+    FDB_SIZE=$(du -h Produktiv-restored.fdb | awk '{print $1}')
     log_success "AVERP FDB-Datei gefunden: $FDB_SIZE"
 else
     log_error "AVERP FDB-Datei nicht gefunden!"
     log_info "Bitte kopieren Sie Ihre AVERP-Datenbank nach:"
-    log_info "  ./KTB-Produktiv-restored.fdb"
+    log_info "  ./Produktiv-restored.fdb"
     log_info ""
-    log_info "Befehl: cp /pfad/zur/averp.fdb ./KTB-Produktiv-restored.fdb"
+    log_info "Befehl: cp /pfad/zur/averp.fdb ./Produktiv-restored.fdb"
     exit 1
 fi
 

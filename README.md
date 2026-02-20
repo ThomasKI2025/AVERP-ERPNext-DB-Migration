@@ -282,16 +282,16 @@ AKTIV_JN          → disabled
 
 **Fehler:**
 ```
-❌ FDB-Datei nicht gefunden: /home/ubuntu/.../KTB-Produktiv-restored.fdb
+❌ FDB-Datei nicht gefunden: /home/ubuntu/.../Produktiv-restored.fdb
 ```
 
 **Lösung:**
 ```bash
 # Prüfen Sie den Pfad
-ls -lh KTB-Produktiv-restored.fdb
+ls -lh Produktiv-restored.fdb
 
 # Falls nicht vorhanden, kopieren Sie die Datei:
-cp /ihr/pfad/averp.fdb ./KTB-Produktiv-restored.fdb
+cp /ihr/pfad/averp.fdb ./Produktiv-restored.fdb
 ```
 
 ### Problem: "Firebird-Verbindung fehlgeschlagen"
@@ -476,7 +476,7 @@ Benutzergeführte Migration mit Abfragen.
 ### FDB-Datei mit neuem Export
 
 ```bash
-python3 migrate_averp_to_erpnext.py --fdb ./KTB-Produktiv-restored.fdb --data-types artikel kunden
+python3 migrate_averp_to_erpnext.py --fdb ./Produktiv-restored.fdb --data-types artikel kunden
 ```
 
 Exportiert neu aus FDB und importiert direkt.
@@ -553,7 +553,7 @@ python3 migrate_averp_to_erpnext.py --skip-export --data-types ihr_typ
 
 - [ ] Ubuntu 24.04 mit sudo-Zugriff
 - [ ] ERPNext installiert und läuft
-- [ ] AVERP FDB-Datei kopiert nach `./KTB-Produktiv-restored.fdb`
+- [ ] AVERP FDB-Datei kopiert nach `./Produktiv-restored.fdb`
 - [ ] `erpnext_credentials.json` erstellt mit gültigen API-Credentials
 - [ ] Firebird Server läuft (`sudo systemctl status firebird3.0`)
 - [ ] MariaDB läuft (`sudo systemctl status mariadb`)

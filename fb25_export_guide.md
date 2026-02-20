@@ -17,8 +17,8 @@ Führe das Export-Skript direkt auf dem System aus, wo AvERP läuft (mit Firebir
 ### Option 3: SQL-Dumps erstellen
 Auf dem AvERP-System mit Firebird 2.5:
 ```bash
-isql-fb -u SYSDBA -p masterkey KTB-Produktiv.FDB -o dump_kunden.sql -q "SELECT * FROM BKUNDE;"
-isql-fb -u SYSDBA -p masterkey KTB-Produktiv.FDB -o dump_artikel.sql -q "SELECT * FROM BSA;"
+isql-fb -u SYSDBA -p masterkey Produktiv.FDB -o dump_kunden.sql -q "SELECT * FROM BKUNDE;"
+isql-fb -u SYSDBA -p masterkey Produktiv.FDB -o dump_artikel.sql -q "SELECT * FROM BSA;"
 # Weitere Tabellen...
 ```
 

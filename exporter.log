@@ -1,7 +1,7 @@
 2026-01-08 12:08:23,498 ERROR DB-Verbindungsfehler: The location of Firebird Client Library could not be determined.
-2026-01-08 12:11:10,882 ERROR DB-Verbindungsfehler: ('Error while connecting to database:\n- SQLCODE: -902\n- I/O error during "CreateFile (open)" operation for file "D:\\AVERP\\AVERP_DATENBANKEN\\KTB-PRODUKTIV.FDP"\n- Error while trying to open file\n- Das System kann die angegebene Datei nicht finden. ', -902, 335544344)
-2026-01-08 12:44:35,404 INFO fdb Treiber fehlgeschlagen: ('Error while connecting to database:\n- SQLCODE: -820\n- unsupported on-disk structure for file /home/oswin/Documents/Coding/AVERP Exporter/DB/KTB-Produktiv.FDB; found 11.2, support 12.2', -820, 335544379)
-2026-01-08 12:44:35,447 ERROR Beide Treiber fehlgeschlagen - fdb: ('Error while connecting to database:\n- SQLCODE: -820\n- unsupported on-disk structure for file /home/oswin/Documents/Coding/AVERP Exporter/DB/KTB-Produktiv.FDB; found 11.2, support 12.2', -820, 335544379), firebirdsql: [Errno 111] Connection refused
+2026-01-08 12:11:10,882 ERROR DB-Verbindungsfehler: ('Error while connecting to database:\n- SQLCODE: -902\n- I/O error during "CreateFile (open)" operation for file "D:\\AVERP\\AVERP_DATENBANKEN\\PRODUKTIV.FDP"\n- Error while trying to open file\n- Das System kann die angegebene Datei nicht finden. ', -902, 335544344)
+2026-01-08 12:44:35,404 INFO fdb Treiber fehlgeschlagen: ('Error while connecting to database:\n- SQLCODE: -820\n- unsupported on-disk structure for file /home/oswin/Documents/Coding/AVERP Exporter/DB/Produktiv.FDB; found 11.2, support 12.2', -820, 335544379)
+2026-01-08 12:44:35,447 ERROR Beide Treiber fehlgeschlagen - fdb: ('Error while connecting to database:\n- SQLCODE: -820\n- unsupported on-disk structure for file /home/oswin/Documents/Coding/AVERP Exporter/DB/Produktiv.FDB; found 11.2, support 12.2', -820, 335544379), firebirdsql: [Errno 111] Connection refused
 2026-01-08 12:44:35,447 ERROR DB-Verbindungsfehler: [Errno 111] Connection refused
 2026-01-08 13:10:39,710 INFO Datenbankverbindung erfolgreich hergestellt
 2026-01-08 13:10:39,710 INFO Starte Export: kunden
