@@ -52,7 +52,7 @@ Fertig! ✅
 
 ```bash
 cd /home/ubuntu
-git clone https://github.com/CodeCraftyOwl/AVERP-to-ERPNext-Data-Migration.git
+git clone https://github.com/ThomasKI2025/AVERP-ERPNext-DB-Migration.git
 cd AVERP-to-ERPNext-Data-Migration
 ```
 
