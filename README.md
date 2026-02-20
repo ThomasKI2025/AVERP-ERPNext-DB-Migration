@@ -51,9 +51,9 @@ Fertig! ✅
 ### Schritt 1: Repository klonen oder herunterladen
 
 ```bash
-cd /home/ubuntu
+cd /home/DEIN_NUTZERNAME
 git clone https://github.com/ThomasKI2025/AVERP-ERPNext-DB-Migration.git
-cd AVERP-to-ERPNext-Data-Migration
+cd AVERP-ERPNext-DB-Migration
 ```
 
 ### Schritt 2: Installations-Skript ausführen
@@ -83,7 +83,7 @@ cp /pfad/zur/ihrer-averp-datenbank.fdb ./averp-database.fdb
 **Wichtig:** 
 - ✅ Der Dateiname **muss** `averp-database.fdb` sein
 - ✅ Die Datei muss im Hauptverzeichnis des Projekts liegen
-- ✅ Pfad: `/home/ubuntu/AVERP-to-ERPNext-Data-Migration/averp-database.fdb`
+- ✅ Pfad: `/home/DEIN_NUTZERNAME/AVERP-ERPNext-DB-Migration/averp-database.fdb`
 
 **Alternative:** FDB-Datei mit anderem Namen verwenden
 
@@ -91,7 +91,7 @@ Falls Sie den Dateinamen nicht ändern möchten, editieren Sie `config.py`:
 
 ```python
 DB_CONFIG = {
-    'dsn': '/home/ubuntu/AVERP-to-ERPNext-Data-Migration/IHR-DATEINAME.fdb',
+    'dsn': '/home/DEIN_NUTZERNAME/AVERP-ERPNext-DB-Migration/IHR-DATEINAME.fdb',
     'user': 'SYSDBA',
     'password': 'masterkey',
     'charset': 'WIN1252',
@@ -138,7 +138,7 @@ Erstellen Sie die Datei `erpnext_credentials.json`:
 Nach der Konfiguration sollte Ihre Struktur so aussehen:
 
 ```
-AVERP-to-ERPNext-Data-Migration/
+AVERP-ERPNext-DB-Migration/
 ├── averp-database.fdb                  ⬅️ Ihre AVERP-Datenbank
 ├── erpnext_credentials.json            ⬅️ Ihre ERPNext-Zugangsdaten
 ├── config.py                           # Datenbank-Konfiguration
@@ -282,7 +282,7 @@ AKTIV_JN          → disabled
 
 **Fehler:**
 ```
-❌ FDB-Datei nicht gefunden: /home/ubuntu/.../Produktiv-restored.fdb
+❌ FDB-Datei nicht gefunden: /home/DEIN_NUTZERNAME/.../Produktiv-restored.fdb
 ```
 
 **Lösung:**
